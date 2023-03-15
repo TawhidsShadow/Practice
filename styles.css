@@ -1,0 +1,202 @@
+*,*::after,*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(13,17,23);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Date time */
+#date-time{
+  color: white;
+}
+
+/* Head section */
+.header {
+  padding: 15px 30px ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  border-bottom: 1px solid gray;
+  flex-wrap: wrap;
+}
+.identity {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  color: white;
+}
+
+.image--container {
+  border: 2px solid grey;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto 0;
+}
+
+.image--container img {
+  height: 100%;
+  width: 100%;
+}
+
+/* container */
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: rgb(120, 155, 184);
+  margin:5% 10%;
+}
+
+/* Todo task */
+.task--writer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 5px 0 0 0;
+}
+
+#task--todo{
+  padding: 2px;
+  outline: 0;
+  color: red;
+}
+.task--manager {
+  width: 450px;
+  height: 450px;
+  border-radius: 5px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  padding: 20px 40px;
+  transition: .5s ease-out;
+}
+.task--manager li {
+  margin: 15px;
+  font-size: 1.2rem;
+  color: white;
+}
+.heading {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+#task--todo{
+  padding: 10px;
+  color: #000000;
+  font-size: 1rem;
+}
+.task__trigger {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.task--list {
+  word-wrap: break-word;
+}
+.task--manager:hover{
+  transform: scale(1.02);
+  box-shadow: 0px 0px 6px rgb(2, 71, 136);
+}
+.done {
+  margin-left: 20%;
+  margin-right: 10px;
+}
+.list__item__btn {
+  font-weight: bold;
+  width: 30px;
+  font-size: 1rem;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 2px 2px gray;
+  border: none;
+}
+
+/* Project */
+.project {
+  width: 450px;
+  height: 450px;
+  border-radius: 5px;
+  transition: .5s;
+  overflow-y: auto;
+  padding: 20px 40px;
+}
+.dice__roll {
+  cursor: pointer;
+}
+.project > ol > li{
+  color: white;
+  font-size: 1.2rem;
+}
+.project:hover {
+  box-shadow: 0px 0px 10px rgb(2, 71, 136);
+  transform: scale(1.02);
+}
+
+/* Dice roll project */
+.dice__roll__project {
+  display: none;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  text-align:center;
+  background-color: #1e1e1e;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.dice__close {
+  font-size: 1rem;
+  padding: 1rem 1.2rem;
+  border-radius: 4px;
+  margin: 2rem 0;
+  cursor: pointer;
+}
+.open {
+  display: block;
+}
+.dice__title {
+  background-color: #eee;
+  color: #111;
+  padding: 1.5rem;
+}
+.dice__trigger {
+  font-size: 1rem;
+  padding: 1rem 1.2rem;
+  border-radius: 4px;
+  margin: 2rem 0;
+  cursor: pointer;
+}
+.dice__trigger:hover{
+  opacity: 0.8;
+}
+
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  /* display: none; */
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  /* outline: 1px solid rgb(116, 61, 162); */
+  background: rgb(48, 80, 108);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
