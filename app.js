@@ -125,5 +125,3 @@ window.addEventListener("load", () => {
     setTimeout(clock, 1000);
   }
 });
-
-
