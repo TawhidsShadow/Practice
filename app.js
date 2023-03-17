@@ -11,6 +11,9 @@ const diceClose = document.querySelector('.dice__close')
 
 // *********** task fucntion ***********
 // document.querySelector('.task--list').removeChild(document.querySelectorAll('.added')[5])
+window.addEventListener('keydown', function(){
+  taskTodo.focus()
+})
 function todo(){
   let newTask= taskTodo.value
   if(newTask.length > 0) {
@@ -30,10 +33,11 @@ function todo(){
     newList.appendChild(remove)
 //
     done.addEventListener('click', function() {
-      newList.style.textDecorationLine='line-through';
+      newList.style.textDecorationLine='line-through'
+      newList.style.color='gray'
     })
     remove.addEventListener('click', function() {
-      taskList.removeChild(newList);
+      taskList.removeChild(newList)
     })
   }
   taskTodo.value= ''
