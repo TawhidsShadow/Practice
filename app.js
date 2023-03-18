@@ -129,3 +129,26 @@ window.addEventListener("load", () => {
     setTimeout(clock, 1000);
   }
 });
+
+
+const monthList = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December"
+]
+setInterval(function() {
+  const date = new Date();
+  const year = date.getFullYear();
+  const month = date.getMonth();
+  const day = date.getDate();
+  document.getElementById("date").innerText = `${monthList[month]} ${day}, ${year}`;
+}, 1000)

@@ -10,9 +10,18 @@ body {
 }
 
 /* Date time */
+#clock {
+  color:white;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+/* #date {
+  col
+}
 #date-time{
   color: white;
-}
+} */
 
 /* Head section */
 .header {
