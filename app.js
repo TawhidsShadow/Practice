@@ -18,10 +18,12 @@ function todo(){
   let newTask= taskTodo.value
   if(newTask.length > 0) {
     let newList = document.createElement('li')
+    let btnContainer = document.createElement('div')
     let done = document.createElement('button')
     let remove = document.createElement('button')
 //
     newList.classList.add('added')
+    btnContainer.classList.add('btn__container')
     done.classList.add('done','list__item__btn')
     remove.classList.add('remove','list__item__btn')
 //
@@ -29,8 +31,9 @@ function todo(){
     remove.innerHTML=('X')
     newList.innerHTML=(`${newTask}`)
     taskList.appendChild(newList)
-    newList.appendChild(done)
-    newList.appendChild(remove)
+    newList.appendChild(btnContainer)
+    btnContainer.appendChild(done)
+    btnContainer.appendChild(remove)
 //
     done.addEventListener('click', function() {
       newList.style.textDecorationLine='line-through'

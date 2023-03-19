@@ -90,6 +90,11 @@ body {
   transition: .6s ease-out;
 }
 .task--manager li {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style-type: circle;
   margin: 15px;
   font-size: 1.2rem;
   color: white;
@@ -113,11 +118,13 @@ body {
 .task--list {
   word-wrap: break-word;
 }
-
+.btn__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 .done {
   color: green;
-  margin-left: 20%;
-  margin-right: 10px;
 }
 .remove {
   color: red;
