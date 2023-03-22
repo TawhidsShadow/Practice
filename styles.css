@@ -90,6 +90,8 @@ body {
   transition: .6s ease-out;
 }
 .task--manager li {
+  border-bottom: 1px solid gray;
+  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
