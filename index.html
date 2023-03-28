@@ -1,59 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Practice of javaScript</title>
-</head>
-<body>
-  <header class="header">
-    <div class="identity">
-      <div class="image--container"><img src="Images/darker than black.jpg" alt="">
-      </div>
-      <h1>MD. Tawhid Hossain</h1>
-    </div>
-    <div id="clock">
-      <h1 id="date-time"></h1>
-      <h3 id="date">March 3, 2023</h3>
-    </div>
-  </header>
-
-  <div class="container">
-    <div class="project">
-      <h1 class="heading">Projects</h1>
-      <ol>
-        <li> <span class="dice__roll pointed">Dice Roll</span> </li>
-        <li> <span class="finance__calculator pointed">Finance Calculator</span> </li>
-      </ol>
-    </div>
-
-    <div class="dice__roll__project">
-      <div class="dice">
-        <h1 class="dice__title">Dice Project</h1>
-        <button class="dice__trigger">Roll</button>
-        <div class="dice__resutl">
-          <img class="dice__image" src="images/dice1.png" alt="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Practice of javaScript</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="identity">
+        <div class="image--container">
+          <img src="Images/darker than black.jpg" alt="" />
         </div>
-        <button class="dice__close">Close</button>
+        <h1>MD. Tawhid Hossain</h1>
+      </div>
+      <div id="clock">
+        <h1 id="date-time"></h1>
+        <h3 id="date">March 3, 2023</h3>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="project">
+        <h1 class="heading">Projects</h1>
+        <ol>
+          <li><span class="dice__roll pointed">Dice Roll</span></li>
+          <li>
+            <span class="finance__calculator pointed">Finance Calculator</span>
+          </li>
+        </ol>
+      </div>
+
+      <div class="dice__roll__project">
+        <div class="dice">
+          <h1 class="dice__title">Dice Project</h1>
+          <button class="dice__trigger">Roll</button>
+          <div class="dice__resutl">
+            <img class="dice__image" src="images/dice1.png" alt="" />
+          </div>
+          <button class="dice__close">Close</button>
+        </div>
+      </div>
+
+      <div class="finance__calculator__project">
+        <p>this is finance calculator</p>
+      </div>
+
+      <div class="task--manager">
+        <h1 class="heading">Tasks of the day</h1>
+        <div class="task--writer">
+          <input id="task--todo" type="text" placeholder="Write your task" />
+          <button class="task__trigger" type="submit">OK</button>
+        </div>
+        <ol class="task--list"></ol>
       </div>
     </div>
 
-    <div class="finance__calculator__project">
-      <p> this is finance calculator</p>
-    </div>
-
-    <div class="task--manager">
-      <h1 class="heading">Tasks of the day</h1>
-      <div class="task--writer">
-        <input id='task--todo' type="text" placeholder="Write your task">
-        <button class="task__trigger" type="submit">OK</button>
-      </div>
-      <ol class="task--list"></ol>
-    </div>
-  </div>
-
-  <script src="app.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
